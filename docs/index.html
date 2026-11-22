@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simon Patyi is the founder and CEO of llocus, working on computer vision, machine learning, and systems.">
+  <meta name="description" content="Simon Patyi is an AI researcher, builder and founder of llocus">
   <title>Simon Patyi</title>
   <link rel="icon" href="favicon.ico">
   <style>
@@ -18,53 +18,73 @@
     header, section, footer { margin-bottom: 3rem; }
     h1, h2, h3 { line-height: 1.2; }
     nav a { margin-right: 1rem; }
-    img { width: 180px; max-width: 100%; height: auto; }
+    .photos {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 4fr);
+      gap: 12px;
+      max-width: 432px;
+    }
+    .photos figure { margin: 0; }
+    .photos img { display: block; width: 100%; height: auto; }
+    .photos figcaption { margin-top: 4px; font-size: 0.875rem; text-align: center; }
+    .portrait { aspect-ratio: 1; object-fit: cover; }
   </style>
 </head>
 <body>
   <header>
     <h1>Simon Patyi</h1>
-    <p>Founder and CEO at <a href="https://llocus.cc">llocus</a>. I work on computer vision, machine learning, systems, and products.</p>
-    <nav aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Hello! My name is Simon Patyi, and I am:</p>
+    <ul>
+        <li>the Founder and CEO at <a href="https://llocus.cc">llocus</a> where we work on bringing the frontier of model optimization forward.</li>
+        <li>a builder at <a href="https://www.growmesh.io/">mesh.</a></li>which is the coolest place for tech enthusiasts in all of Budapest.
+        <li>and some other wonderful stuff :)</li>
+    </ul>
+
   </header>
 
   <main>
-    <img src="simon-patyi.webp" alt="Portrait of Simon Patyi" width="180" height="180">
-
     <section id="about">
-      <h2>About</h2>
-      <p>I’m building llocus, eye-tracking software that works with the hardware already built into your devices, without requiring dedicated eye-tracking hardware.</p>
-      <p>I lead the company across the gaze engine, product, and strategy. Outside llocus, I build compilers, embedded devices, Android software, developer tools, and small experiments.</p>
+      <h2>About me.</h2>
+      <p>I am a great fan of AI and its capabilities. At llocus we work on making models faster, more efficient, all while keeping them the same quality, or smarter even. We're piloting with companies who want the most performance for their hardware.</p>
+      <p>At llocus, I lead both the technical and the business side of things. If you're curious, please check out the <a href="https://llocus.cc/news"> latest articles</a> that we published. We release our frontier results monthly, with smaller insights every week.</p>
+
+      <div class="photos">
+        <figure>
+          <img class="portrait" src="simon-portrait.jpg" alt="Portrait of me, Simon" width="180" height="180">
+          <figcaption>Me</figcaption>
+        </figure>
+        <figure>
+          <img src="simon-and-girlfriend.jpg" alt="Me and my girlfriend outdoors" width="240" height="180">
+          <figcaption>Me and my girlfriend</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <h3><a href="papers/fractal_symmetry_revised.pdf">Symmetry and Map Counts for Self-Similar Sets with Prescribed Convex Hull</a></h3>
+      <p>Constructs fractals with a prescribed convex hull, dimension and symmetry group. Studies how many maps are needed when the pieces don’t overlap.</p>
+
+      <h3><a href="papers/toh_unified_field_theory.pdf">The Physics of the Boiling Isles: A Unified Field Theory of Magic in The Owl House</a></h3>
+      <p>A NON-SERIOUS, six-law model of magic in <em>The Owl House</em>, built around the show's actual canon.</p>
     </section>
 
     <section id="work">
-      <h2>Selected work</h2>
+      <h2>Projects</h2>
 
       <h3><a href="https://llocus.cc">llocus</a></h3>
-      <p>Webcam-based eye tracking. Ordinary camera frames go in; a usable gaze signal comes out.</p>
+      <p>Superfast AI, without the cost of quality? Count me in</p>
 
       <h3><a href="https://github.com/lottieyael/visuall">Visuall</a></h3>
-      <p>A compiled Python-like language with native LLVM code generation, garbage collection, C FFI, a package manager, and editor tooling.</p>
+      <p>Pythonlike language at the speed of C while supporting any C library</p>
 
-      <h3>Haumea</h3>
-      <p>A small embedded device for communicating with an agent through Morse code over a low-cost cellular connection.</p>
-
-      <h3><a href="https://github.com/lottieyael/astroweather">AstroWeather</a></h3>
-      <p>An Android astronomy companion for forecasts, planning, object search, alerts, and observation notes.</p>
-
-      <h3><a href="https://github.com/lottieyael/wFetch">wFetch</a></h3>
-      <p>A CLI and agent plugin for network and device discovery.</p>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-      <p><strong>Founder &amp; CEO, llocus</strong><br>July 2026 — present</p>
-      <p><strong>Student Ambassador, Euro Youth Mental Health</strong><br>September 2024 — May 2026</p>
+      <p><strong>Founder &amp; CEO, llocus</strong><br>July 2026 - present</p>
+      <p><strong>Student Ambassador, Euro Youth Mental Health</strong><br>September 2024 - May 2026</p>
       <p><strong>Intern, Ivy Technology</strong><br>August 2025</p>
     </section>
 
@@ -73,7 +93,7 @@
       <p><a href="mailto:simon@llocus.cc">simon@llocus.cc</a></p>
       <p>
         <a href="https://github.com/lottieyael">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/simon-patyi-799654340/">LinkedIn</a> ·
+        <a href="https://www.linkedin.com/in/simonpatyi/">LinkedIn</a> ·
         <a href="https://x.com/simonsdevstuff">X</a>
       </p>
     </section>
